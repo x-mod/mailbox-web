@@ -1,0 +1,9 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react" //如果项目使用 react 开发
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
+}
