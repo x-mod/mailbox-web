@@ -6,6 +6,10 @@
       "target": "es5",
       "jsx": "react",
       "allowJs": true,
-      "moduleResolution": "node"
+      "moduleResolution": "node",
+      "baseUrl": ".", // root of your "paths" below. Required if "paths" is defined
+      "paths": {
+        "@/*": ["src/*"] // enables us to use @components/MyComponent
+        }
     }
   }

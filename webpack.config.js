@@ -44,7 +44,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx", "ts", "tsx"],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@assets': path.resolve(__dirname, 'src/assets'),
@@ -58,6 +58,6 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"), // template file
       filename: "index.html", // output file
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ],
 };

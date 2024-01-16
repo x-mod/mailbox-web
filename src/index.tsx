@@ -1,9 +1,11 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-
+import { createRoot } from 'react-dom/client';
+import { Mailbox } from "mailbox-typescript-client";
 import "./styles/main.scss";
+import App from "./app";
 
-const name = "Hello!";    
-const element = <h1>MailBox WebMail, {name}</h1>;
 
-ReactDOM.render(element, document.getElementById("root"));
+Mailbox.baseURL = "http://localhost:8080";
+const container = document.getElementById('root');
+const root = createRoot(container); 
+root.render(<App />);
