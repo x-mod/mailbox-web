@@ -1,13 +1,16 @@
 import * as React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import {Hero, Settings} from "@/components";
+
 
 export function SetupView() {
     useEffect(() => {
-        console.log("setup")
+        document.title = "Setup MailBox";
     })
     return (
-        <div>
-            <h1>MailBox WebMail --- SETUP </h1>
-        </div>
+        <>
+            <Hero />
+            <Settings />         
+        </>
     );
 }
